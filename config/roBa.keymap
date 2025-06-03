@@ -37,6 +37,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Mac_ScreenLock {
+            bindings = <&kp LG(LC(Q))>;
+            key-positions = <15 27>;
+        };
     };
 
     macros {
