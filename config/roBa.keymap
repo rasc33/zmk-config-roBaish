@@ -18,8 +18,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <1 0 0>;
-            slow-release;
+            key-positions = <1 0>;
         };
 
         shift_tab {
