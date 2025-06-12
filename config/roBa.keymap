@@ -18,13 +18,13 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <1 0 0>;
             slow-release;
         };
 
         shift_tab {
             bindings = <&kp RS(TAB)>;
-            key-positions = <12 11 11 12>;
+            key-positions = <2 1>;
             slow-release;
         };
 
