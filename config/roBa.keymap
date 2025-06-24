@@ -39,12 +39,12 @@
 
         Mac_ScreenLock {
             bindings = <&kp LG(LC(Q))>;
-            key-positions = <15 27>;
+            key-positions = <27 15 39>;
         };
 
         Ctrl+Alt+Del {
             bindings = <&kp LC(LA(DELETE))>;
-            key-positions = <37 38 39 40 41>;
+            key-positions = <16 28 40>;
         };
     };
 
