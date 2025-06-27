@@ -123,7 +123,7 @@
 &kp Q             &kp W         &kp E             &kp R            &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D             &kp F            &kp G               &kp ESCAPE              &kp MINUS      &kp H        &kp J  &lt 7 K    &kp L    &mt RIGHT_CONTROL SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C             &kp V            &kp B               &lt 7 LC(UP_ARROW)      &kp TILDE      &kp N        &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
-&kp LEFT_WIN      &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LSHFT SPACE  &lt 4 LC(LEFT_ALT)  &lt 6 LC(UP_ARROW)      &kp BACKSPACE  &lt 1 ENTER                             &lt 5 BACKSLASH
+&kp LEFT_WIN      &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LSHFT SPACE  &lt 4 LC(LEFT_ALT)  &lt 6 LC(UP_ARROW)      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -143,7 +143,7 @@
 &kp Q             &kp W         &kp E             &kp R                 &kp T                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D             &kp F                 &kp G            &lt 7 ESCAPE            &kp MINUS      &kp H        &kp J  &lt 7 K    &kp L    &mt RIGHT_CONTROL SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                 &kp B            &kp LC(UP_ARROW)        &kp TILDE      &kp N        &kp M  &kp COMMA  &kp DOT  &lt 4 SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 4 LC(SPACE)  &lt 6 LC(UP_ARROW)      &kp BACKSPACE  &lt 3 ENTER                             &lt 5 BACKSLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 4 LC(SPACE)  &lt 6 LC(UP_ARROW)      &kp BACKSPACE  &lt 3 ENTER                             &lt 6 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -163,7 +163,7 @@
 &kp EXCLAMATION   &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                         &kp CARET          &kp AMPERSAND        &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LEFT_CONTROL  &trans  &trans    &trans      &trans       &trans      &kp MINUS  &kp SQT            &left_brace_bracket  &right_brace_bracket  &kp GRAVE             &kp EQUAL
 &kp LEFT_SHIFT    &trans  &trans    &trans      &trans       &trans      &trans     &kp DOUBLE_QUOTES  &trans               &kp COMMA             &kp DOT               &kp SLASH
-&trans            &trans  &trans    &trans      &trans       &trans      &kp DEL    &lt 8 ENTER                                                                         &kp BACKSLASH
+&trans            &trans  &trans    &trans      &trans       &trans      &kp DEL    &lt 0 ENTER                                                                         &kp BACKSLASH
             >;
         };
 
@@ -172,7 +172,7 @@
 &kp LA(TAB)       &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                        &trans  &trans          &trans          &trans           &trans
 &kp LEFT_CONTROL  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans   &trans  &trans          &kp UP_ARROW    &trans           &trans
 &kp LEFT_SHIFT    &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
-&trans            &trans                  &trans          &trans                   &trans   &trans      &kp DEL  &to 8                                                    &trans
+&trans            &trans                  &trans          &trans                   &trans   &trans      &kp DEL  &to 0                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -181,27 +181,18 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &mkp MB5  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &mkp MB4  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &mkp MB5  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &mkp MB4  &mkp MB5                                &trans
             >;
         };
 
         SCR_SETBT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                           &BT0_Win  &BT1_Mac  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &sys_reset   &trans    &trans    &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans    &trans    &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                          &bt BT_CLR_ALL
-            >;
-        };
-
-        BT_SETTING {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &sys_reset       &sys_reset   &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bootloader      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &mo 0         &mo 0   &trans           &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                                &BT0_Win  &BT1_Mac  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &sys_reset       &sys_reset   &trans    &trans    &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &bootloader      &bootloader  &trans    &trans    &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans           &trans       &trans                                          &bt BT_CLR_ALL
             >;
         };
     };
