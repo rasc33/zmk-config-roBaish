@@ -28,7 +28,7 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 21>;
         };
 
@@ -47,8 +47,8 @@
             key-positions = <16 28 40>;
         };
 
-        Single_Quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        Minus {
+            bindings = <&kp MINUS>;
             key-positions = <8 9>;
         };
     };
