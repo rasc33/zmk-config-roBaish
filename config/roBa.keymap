@@ -189,10 +189,10 @@
 
         SCR_SETBT {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_CLR  &trans  &to 2   &to 0                                  &BT0_Win     &BT1_Mac  &trans  &trans  &trans
-&trans          &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_UP    &trans       &trans    &trans  &trans  &trans
-&trans          &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_DOWN  &trans       &trans    &trans  &trans  &trans
-&trans          &trans      &trans  &trans  &trans  &trans      &sys_reset         &bootloader                            &trans
+&bt BT_CLR_ALL  &bt BT_CLR  &trans  &to 2   &to 0                                  &BT0_Win  &BT1_Mac  &trans  &trans  &trans
+&trans          &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_UP    &trans    &trans    &trans  &trans  &trans
+&sys_reset      &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_DOWN  &trans    &trans    &trans  &trans  &trans
+&bootloader     &trans      &trans  &trans  &trans  &trans      &trans             &trans                              &trans
             >;
         };
     };
