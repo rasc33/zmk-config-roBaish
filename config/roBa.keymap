@@ -61,18 +61,25 @@
             label = "TO_LAYER_0";
         };
 
-        BT0_Win: BT0_Win {
+        BT0_PrvMac: BT0_Win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &bt BT_SEL 0>;
+            bindings = <&to 2 &bt BT_SEL 0>;
             label = "BT0_WIN";
         };
 
-        BT1_Mac: BT1_Mac {
+        BT1_WorkMac: BT1_Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 2 &bt BT_SEL 1>;
             label = "BT1_MAC";
+        };
+
+        BT2_PrvWin: BT3_Win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &bt BT_SEL 0>;
+            label = "BT3_WIN";
         };
     };
 
@@ -189,10 +196,10 @@
 
         SCR_SETBT {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_CLR  &trans  &to 2   &to 0                                  &BT0_Win  &BT1_Mac  &trans  &trans  &bootloader
-&trans          &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_UP    &trans    &trans    &trans  &trans  &sys_reset
-&sys_reset      &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_DOWN  &trans    &trans    &trans  &trans  &trans
-&bootloader     &trans      &trans  &trans  &trans  &trans      &trans             &trans                              &trans
+&bt BT_CLR_ALL  &bt BT_CLR  &trans  &to 2   &to 0                                  &BT0_PrvMac  &BT1_WorkMac  &BT2_PrvWin  &trans  &bootloader
+&trans          &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_UP    &trans       &trans        &trans       &trans  &sys_reset
+&sys_reset      &trans      &trans  &trans  &trans  &trans      &kp K_SCROLL_DOWN  &trans       &trans        &trans       &trans  &trans
+&bootloader     &trans      &trans  &trans  &trans  &trans      &trans             &trans                                          &trans
             >;
         };
     };
